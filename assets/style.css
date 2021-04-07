@@ -48,3 +48,9 @@ a {
   margin: 67px 0 100px 0;
   text-align: center;
 }
+
+.credits {
+  font-size: 12px;
+  opacity: 0.5;
+  text-align: center;
+}

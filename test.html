@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    function downloadImage(){
+      const images = document.querySelectorAll("img");
+      for (i of images) {
+        var a = document.createElement('a');
+        a.href = i.src;
+        a.download = 'filename.png';
+        document.body.appendChild(a);
+
+        console.log(a)
+        a.click();
+        document.body.removeChild(a);
+      }
+    }
+  </script>
+  <body>
+    <img class="iconImage img-responsive" src="https://placekitten.com/g/200/300" alt="icon3">
+    <img class="iconImage img-responsive" src="https://placekitten.com/g/200/300" alt="icon3">
+    <img class="iconImage img-responsive" src="https://placekitten.com/g/200/300" alt="icon3">
+  </body>
+</html>
